@@ -22,7 +22,7 @@ describe("Product unit tests", () => {
   it("should throw error when name and id are empty", () => {
     expect(() => {
       let customer = new Product("", "", 0);
-    }).toThrowError("Product: Id is required, Product: Name is required");
+    }).toThrowError("Product: Id is required,Product: Name is required");
   });
 
   it("should change name", () => {

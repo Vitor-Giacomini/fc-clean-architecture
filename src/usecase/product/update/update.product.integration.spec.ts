@@ -57,7 +57,7 @@ describe("Integration test for product update use case", () => {
         input.name = "";
 
         await expect(updateProductUseCase.execute(input)).rejects.toThrow(
-            "product: Name is required"
+            "Product: Name is required"
         );
     });
 
@@ -70,7 +70,7 @@ describe("Integration test for product update use case", () => {
         input.price = -1;
 
         await expect(updateProductUseCase.execute(input)).rejects.toThrow(
-            "product: Price must be greater than zero"
+            "Product: Price must be greater than zero"
         );
     });
 });

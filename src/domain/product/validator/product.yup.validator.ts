@@ -28,7 +28,7 @@ export default class ProductYupValidator
       const e = errors as yup.ValidationError;
       e.errors.forEach((error) => {
         entity.notification.addError({
-          context: "product",
+          context: "Product",
           message: error,
         });
       });

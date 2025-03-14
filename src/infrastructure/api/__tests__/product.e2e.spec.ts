@@ -27,7 +27,7 @@ describe("E2E test for product", () => {
 
     it("should not create a product", async () => {
         const response = await request(app).post("/product").send({
-            name: "product",
+            name: "Product",
         });
         expect(response.status).toBe(500);
     });
